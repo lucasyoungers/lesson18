@@ -9,7 +9,33 @@
 
 <body>
     <h1>Vue Basics</h1>
-    <div id="app"></div>
+    <div id="app">
+        <h2>{{ title }}</h2>
+
+        <h3>{{ greet(name="Lucas") }}</h3>
+
+        <hr>
+        <p>
+            <a v-bind:href="url">My Web Page</a>
+        </p>
+        <hr>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" v-model:value="userName">
+        <p>{{ userName }}</p>
+
+        <hr>
+
+        <label for="check">Check:</label>
+        <input type="checkbox" id="check" v-model:value="notARobot">
+        <p>{{ testing() }}</p>
+
+        <hr>
+
+        <label for="boast"></label>
+        <input type="number" id="boast" v-model:value="numBoast">
+        <p>{{ insult() }}</p>
+    </div>
 </body>
 
 </html>
