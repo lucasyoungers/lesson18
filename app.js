@@ -36,6 +36,13 @@ new Vue ({
             } else {
                 return `I'm positive that you're an idiot.`
             }
+        },
+        nameFinder() {
+            if (this.userName != '') {
+                return `Is your name ${this.userName}?`
+            } else {
+                return ''
+            }
         }
     }
 })
