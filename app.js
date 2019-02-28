@@ -31,6 +31,8 @@ new Vue ({
                 return `This is your score out of 10.`
             } else if (this.numBoast == 4256430867) {
                 return `ARE YOU STALKING ME??? I'M CALLING THE POLICE NOW!!!`
+            } else if (this.numBoast == 42) {
+                return `I suppose I can't fault you.`
             } else {
                 return `I'm positive that you're an idiot.`
             }
