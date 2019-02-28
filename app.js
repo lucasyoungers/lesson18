@@ -9,7 +9,11 @@ new Vue ({
     },
     methods: {
         greet(name) {
-            return `Welcome to ${name}`
+            if (this.userName != '') {
+                return `Welcome to Hello World, ${this.userName}`
+            } else {
+                return `Welcome to ${name}`
+            }
         },
         testing() {
             if (this.notARobot == true) {
